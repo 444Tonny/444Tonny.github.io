@@ -152,8 +152,18 @@
     border-bottom: rgb(39, 39, 39) solid 2px;
 }
 
+.ft-img
+{
+  display: flex;
+}
+
 @media (max-width: 767px) 
 {
+  .ft-img
+  {
+    justify-content: center;
+  }
+
   .apropos
   {
     padding: 0px 5% 0px 5%;
@@ -205,18 +215,13 @@
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .featured-images {
-    flex-direction: row;
+    flex-direction: column;
   }
 }
 @media (min-width: 1200px) {
   .featured-images {
     flex-direction: column;
   }
-}
-
-.ft-img
-{
-  display: flex;
 }
 
 .ft-img-row,
@@ -322,7 +327,6 @@
   flex-direction: column;
 }
 
-
 #hire-sec .other-social div
 {
   margin-top: 15px;
@@ -330,7 +334,6 @@
   flex-direction: row;
   justify-content: center;
 }
-
 
 #hire-sec .other-social h2
 {
