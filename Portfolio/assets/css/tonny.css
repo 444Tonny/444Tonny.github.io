@@ -159,6 +159,20 @@
 
 @media (max-width: 767px) 
 {
+  h1, .h1 {
+    font-size: 30px;
+  }
+
+  .ft1 {
+    font-size: 2.7em;
+    line-height: 1.2;
+  }
+
+  .ft2 {
+    font-size: 1.2em;
+    margin: 13px 0px 10px 0px;
+  }
+
   .ft-img
   {
     justify-content: center;
@@ -167,6 +181,11 @@
   .apropos
   {
     padding: 0px 5% 0px 5%;
+  }
+
+  .view-link
+  {
+    margin: 15px 0px 10px 0px;
   }
 
   .mission
@@ -352,7 +371,7 @@
 
 .border-white
 {
-  border: 1px solid rgb(208, 208, 208);
+  border: 1px solid rgb(100, 100, 100);
 }
 
 a:hover, a:focus {

@@ -8,6 +8,11 @@
   color: #c44550;
 }
 
+.yellow
+{
+  color: #dfbe1b;
+}
+
 .view-link-orange::after
 {
   content: "";
@@ -25,6 +30,16 @@
   height: 35px;
   width: 75px;
   background: #c44550 !important;
+  z-index: -1;
+}
+
+.view-link-yellow::after
+{
+  content: "";
+  position: absolute;
+  height: 35px;
+  width: 75px;
+  background: #dfbe1b !important;
   z-index: -1;
 }
 
