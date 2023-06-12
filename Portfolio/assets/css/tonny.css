@@ -259,6 +259,11 @@
   h2, .h2 {
     font-size: 25px;
   }
+
+  p {
+    line-height: 26px;
+    font-size: 14px;
+  }
 }
 
 .ft-img-row,
