@@ -249,6 +249,18 @@
   }
 }
 
+@media (max-width: 475px)
+{
+  #home-sec .main-img, 
+  #home-sec .main-img-2 {
+    max-height: 150px;
+  }
+
+  h2, .h2 {
+    font-size: 25px;
+  }
+}
+
 .ft-img-row,
 .ft-img-col
 {
