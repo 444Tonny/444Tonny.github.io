@@ -60,12 +60,13 @@ h1
 .custom-btn-one 
 {
     color: #fff;
-    background-color:rgba(0, 0, 0, 0.70);
-    border-color: rgb(255, 15, 101);
+    border-color: white;
 }
 .custom-btn-one:hover {
-        color: #fff;
-    background-color:rgba(0, 0, 0, 0.40);
+    cursor: pointer;
+    transition: 0.2s;
+    color: #1e1e1e;
+    background-color:rgb(255, 255, 255);
 }
 .btn-style-two 
 {
