@@ -19,8 +19,14 @@ color:rgb(255, 15, 101);
 /* =============================================================
   BUTTON SECTION STYLES
  ============================================================ */
-.custom-btn-one {
-   border-color: rgb(255, 15, 101);
+ .custom-btn-one {
+  border-color: white;
+}
+
+.custom-btn-one:hover {
+ transition: 0.2s;
+ cursor: pointer;
+ opacity: 0.75;
 }
    
 /* =============================================================
