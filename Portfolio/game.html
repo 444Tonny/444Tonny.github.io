@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -11,206 +12,275 @@
     <title>Tonny Game Portfolio</title>
     <!-- BOOTSTRAP CORE STYLE CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
-    <!-- FONT AWESOME CSS -->
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
-    <!-- ANIMATE  CSS -->
     <link href="assets/css/animate.css" rel="stylesheet" />
-    <!-- PRETTY PHOTO  CSS -->
     <link href="assets/css/prettyPhoto.css" rel="stylesheet" />
-    <!--  STYLE SWITCHER CSS -->
     <link href="assets/css/styleSwitcher.css" rel="stylesheet" />
-    <!-- CUSTOM STYLE CSS -->
     <link href="assets/css/style.css" rel="stylesheet" />
     <link href="assets/css/tonny.css" rel="stylesheet" />
     <link href="assets/css/game.css" rel="stylesheet" />
-    <!--PINK STYLE VERSION IS BY DEFAULT, USE ANY ONE STYLESHEET FROM FOUR STYLESHEETS (pink,green,blue and brown) HERE-->
+    <link href="assets/css/loading.css" rel="stylesheet" />
     <link href="assets/css/themes/green.css" id="mainCSS" rel="stylesheet" />
-    <!-- GOOGLE FONTS -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
 
 </head>
+
 <body>
-    <!-- /. END THEME SWITCHER-->
-
-    <div id="home-sec">
-        <div class="overlay">
-            <div class="container">
-                <div class="row pad-top-bottom  move-me">
-                    <div class="col-lg-5 col-md-5 col-sm-5 text-center">
-                        <img src="assets/img/sad.jpg" class="main-img img-circle wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".2s" alt=""/>
-                        <h1 class="wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".4s">TONNY</h1>
-                        <h2 class="wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".6s">WEB DEVELOPER</h2>
-                        <a href="https://444tonny.github.io/Portfolio/index.html" class="btn custom-btn-one btn-lg wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".8s">WEB PORTFOLIO</a>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 text-center  ">
-                        <a href="#about-sec" class="wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".1s">
-                            <i class="fa fa-info icon-round icon-round-active"></i>
-                            <h3 class="wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".2s">ABOUT ME</h3>
-                        </a>
-                        <a href="#resume-sec" class="wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".3s">
-                            <i class="fa fa-briefcase icon-round"></i>
-                            <h3 class="wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".4s">RESUME</h3>
-                        </a>
-                        <a href="#portfolio-sec" class="wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".5s">
-                            <i class="fa fa-recycle icon-round icon-round-active"></i>
-                            <h3 class="wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".6s">PORTFOLIO </h3>
-                        </a>
-                    </div>
-                    <div class="col-lg-5 col-md-5 col-sm-5 text-center">
-                        <img src="assets/img/smile.jpg" class="main-img-2 img-circle wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".2s" alt="" />
-                        <h1 class="wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".4s">TONNY</h1>
-                        <h2 class="wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".6s">GAME DESIGNER</h2>
-                        <a href="#" class="btn custom-btn-one btn-lg wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".8s">GAME PORTFOLIO</a>
-                    </div>
-                </div>
-
+    <div id="loading-animation">
+        <div class="board-animation">
+            <div class="left">
+            </div>
+            <div class="right">
+            </div>
+            <div class="ball">
+            </div>
+            <div class="ballhit">
             </div>
         </div>
     </div>
-    <!-- HOME SECTION END-->
-    <section id="about-sec">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2 col-md-2 col-sm-2 wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".4s"></div>
-                <div class="col-lg-8 col-md-8 col-sm-8 wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".4s">
-                    <h1 style="text-align:center;">ABOUT ME</h1>
-                    <div class="color-strip"></div>
-                    <p style="font-family: monospace;" class="apropos">
-                        Hello World, this is Tonny! I'm a big fan of video games and started learning game development 
-                        since the end of my studies in Web Development in 2021. I specialize in UI/UX Design & 
-                        Programming but have also developed a few mobile games from scratch out of my love for learning and creating!
-                    </p>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-2 wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".4s"></div>
-            </div>
-            <br>
-        </div>
-    </section>
 
-    <!-- TESTIMONIAL SECTION END-->
+    <script>
+        window.addEventListener('load', function () {
+            var loadingAnimation = document.getElementById('loading-animation');
+            var pageContent = document.getElementById('page-content');
+            var minimumLoadingTime = 2500;
+            var transitionDelay = 1500; // Délai de transition en millisecondes
 
-    <section id="portfolio-sec">
-        <div class="container">
-            <div class="row text-center wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".2s">
-                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 text-center">
-                    <h1 style="color:whitesmoke;">RECENT PROJECTS</h1>
-                    <p style="color:#4e4e4e;">Here are some glimpses of recent projects I have worked on ! </p>
-                </div>
-            </div>
+            // Afficher l'animation de chargement
+            loadingAnimation.style.display = 'block';
 
-            <div class="row container work-details work1">
-                <div class="featured-text">
-                    <span class="ft1">SLIMEBO</span>
-                    <span class="ft2 orange">❮/❯ <a class="space">'</a>Hyper Casual Game</span>
-                    <span class="ft3">
-                        An Hyper Casual game I developed using Unity C# and Photoshop for creating assets. 
-                        The game's concept is based on physics. I implemented a shop system, skins,
-                         and achievements using JSON files as well as an online leaderboard using Web Service.
-                    </span>
-                    <a class="view-link view-link-orange" target="_blank" href="https://play.google.com/store/apps/details?id=com.slimebo.drop.stack.slime">View the game&emsp;→</a>
-                </div>
-                <div class="featured-images">  
-                    <div class="ft-img ft-img-row">
-                        <img class="img-responsive apercu-row mini" src="assets/img/projects-games/slimebo0.png"/>
-                        <img class="img-responsive apercu-row" src="assets/img/projects-games/slimebo1.png"/>
-                        <img class="img-responsive apercu-row mini" src="assets/img/projects-games/slimebo22.png"/>
+            // Masquer le contenu de la page
+            pageContent.style.display = 'none';
+
+            // Changer la couleur de fond de la balise body avec un délai
+            setTimeout(function () {
+                document.body.style.backgroundColor = '#020202';
+                document.body.style.transition = 'background-color 1s';
+            }, transitionDelay);
+
+            // Masquer l'animation de chargement et afficher le contenu de la page après la temporisation
+            setTimeout(function () {
+                loadingAnimation.style.display = 'none';
+                pageContent.style.display = 'block';
+                document.body.style.backgroundColor = 'white';
+            }, minimumLoadingTime);
+        });
+    </script>
+
+    <div id="page-content">
+        <!-- /. END THEME SWITCHER-->
+
+        <div id="home-sec">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row pad-top-bottom  move-me">
+                        <div class="col-lg-5 col-md-5 col-sm-5 text-center">
+                            <img src="assets/img/sad.jpg" class="main-img img-circle wow bounceIn animated"
+                                data-wow-duration="1s" data-wow-delay=".2s" alt="" />
+                            <h1 class="wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".4s">TONNY</h1>
+                            <h2 class="wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".6s">WEB DEVELOPER
+                            </h2>
+                            <a href="https://444tonny.github.io/Portfolio/index.html"
+                                class="btn custom-btn-one btn-lg wow bounceIn animated" data-wow-duration="1s"
+                                data-wow-delay=".8s">WEB PORTFOLIO</a>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 text-center  ">
+                            <a href="#about-sec" class="wow bounceIn animated" data-wow-duration="1s"
+                                data-wow-delay=".1s">
+                                <i class="fa fa-info icon-round icon-round-active"></i>
+                                <h3 class="wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".2s">ABOUT ME
+                                </h3>
+                            </a>
+                            <a href="#resume-sec" class="wow bounceIn animated" data-wow-duration="1s"
+                                data-wow-delay=".3s">
+                                <i class="fa fa-briefcase icon-round"></i>
+                                <h3 class="wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".4s">RESUME
+                                </h3>
+                            </a>
+                            <a href="#portfolio-sec" class="wow bounceIn animated" data-wow-duration="1s"
+                                data-wow-delay=".5s">
+                                <i class="fa fa-recycle icon-round icon-round-active"></i>
+                                <h3 class="wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".6s">PORTFOLIO
+                                </h3>
+                            </a>
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-5 text-center">
+                            <img src="assets/img/smile.jpg" class="main-img-2 img-circle wow bounceIn animated"
+                                data-wow-duration="1s" data-wow-delay=".2s" alt="" />
+                            <h1 class="wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".4s">TONNY</h1>
+                            <h2 class="wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".6s">GAME DESIGNER
+                            </h2>
+                            <a href="#" class="btn custom-btn-one btn-lg wow bounceIn animated" data-wow-duration="1s"
+                                data-wow-delay=".8s">GAME PORTFOLIO</a>
+                        </div>
                     </div>
-                    <span class="ft4">
-                        Unity, C#, Json, Adobe PS (Online Ranking, Skin & Shop System)
-                    </span>
-                </div>
-            </div>
 
-            <div class="row container work-details work2">
-                <div class="featured-images">  
-                    <div class="ft-img ft-img-col">
-                        <img class="img-responsive apercu-col" src="assets/img/projects-games/arrow00.jpg"/>
-                        <img class="img-responsive apercu-col" src="assets/img/projects-games/arrow22.jpg"/>
-                    </div>
-                    <span class="ft4">
-                        Unity, C#, Adobe PS, After Effect (Online Ranking, Score System)
-                    </span>
-                </div>
-                <div class="featured-text">
-                    <span class="ft1">ARROW</span>
-                    <span class="ft2 red">❮/❯ <a class="space">'</a>Hyper Casual Game</span>
-                    <span class="ft3">
-                        My very first game, a Hyper Casual type coded on Unity C#. It is an endless runner game where 
-                        obstacles are generated programmatically infinitely,
-                         with a score system associated with the use of Web Service to have an online leaderboard.
-                    </span>
-                    <a class="view-link view-link-red" target="_blank" href="https://play.google.com/store/apps/details?id=com.SevenSea.ArrowZiggyFlappy">←&emsp;View the game</a>
-                </div>
-            </div>
-
-            <div class="row container work-details work1">
-                <div class="featured-text">
-                    <span class="ft1">WOORD-SPELLETJES.nl</span>
-                    <span class="ft2 yellow">❮/❯ <a class="space">'</a>Web game</span>
-                    <span class="ft3">
-                        Three web applications: Word6, Paardensprong, and Wordfinder. 
-                        These are distinct games developed with JavaScript, centered around Dutch word play.
-                         Each game is built using a combination of PHP, CSS, HTML, JSON, and use the Google Sheets API. 
-                        All three games are conveniently accessible on this website.
-                    </span>
-                    <a class="view-link view-link-yellow" target="_blank" href="https://woord-spelletjes.nl/">View the game&emsp;→</a>
-                </div>
-                <div class="featured-images">  
-                    <div class="ft-img">
-                        <img class="ft-img1 img-responsive apercu-siteweb" src="assets/img/projects/woord-light.png" alt="" />
-                        <img class="ft-img2 img-responsive apercu-siteweb border-white" src="assets/img/projects/woord-dark.png" alt="" />
-                    </div>
-                    <span class="ft4">
-                        JavaScript, PHP, CSS, HTML, JSON, Google Sheet API
-                    </span>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- PORTFOLIO SECTION END-->     
-
-    <!-- SKILL SECTION END-->
-    <section id="hire-sec">
-        <div class="row pad-top-bottom wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".2s" style="display:flex">
-            <div class="col-lg-2 col-md-2 col-sm-2 vertical-text">
-                <span>Thank you for visiting  :)</span>
-            </div>
-            <div class="col-lg-7 col-md-7 col-sm-7">
-                <h1 style="color:rgb(23, 23, 23);">LET'S GET IN TOUCH !</h1>
-                <p class="hire-text">If you're interested in my services or for more information, <br> feel free to contact me !</p>
-                <p class="hire-text">Send an email to: <u>tonny.freelancing@gmail.com</u></p>
-                <br/>
+        <!-- HOME SECTION END-->
+        <section id="about-sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2 col-sm-2 wow bounceIn animated" data-wow-duration="1s"
+                        data-wow-delay=".4s"></div>
+                    <div class="col-lg-8 col-md-8 col-sm-8 wow bounceIn animated" data-wow-duration="1s"
+                        data-wow-delay=".4s">
+                        <h1 style="text-align:center;">ABOUT ME</h1>
+                        <div class="color-strip"></div>
+                        <p style="font-family: monospace;" class="apropos">
+                            Hello World, this is Tonny! I'm a big fan of video games and started learning game
+                            development
+                            since the end of my studies in Web Development in 2021. I specialize in UI/UX Design &
+                            Programming but have also developed a few mobile games from scratch out of my love for
+                            learning and creating!
+                        </p>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 wow bounceIn animated" data-wow-duration="1s"
+                        data-wow-delay=".4s"></div>
+                </div>
                 <br>
             </div>
+        </section>
+
+        <!-- TESTIMONIAL SECTION END-->
+
+        <section id="portfolio-sec">
+            <div class="container">
+                <div class="row text-center wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".2s">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 text-center">
+                        <h1 style="color:whitesmoke;">RECENT PROJECTS</h1>
+                        <p style="color:#4e4e4e;">Here are some glimpses of recent projects I have worked on ! </p>
+                    </div>
+                </div>
+
+                <div class="row container work-details work1">
+                    <div class="featured-text">
+                        <span class="ft1">SLIMEBO</span>
+                        <span class="ft2 orange">❮/❯ <a class="space">'</a>Hyper Casual Game</span>
+                        <span class="ft3">
+                            An Hyper Casual game I developed using Unity C# and Photoshop for creating assets.
+                            The game's concept is based on physics. I implemented a shop system, skins,
+                            and achievements using JSON files as well as an online leaderboard using Web Service.
+                        </span>
+                        <a class="view-link view-link-orange" target="_blank"
+                            href="https://play.google.com/store/apps/details?id=com.slimebo.drop.stack.slime">View the
+                            game&emsp;→</a>
+                    </div>
+                    <div class="featured-images">
+                        <div class="ft-img ft-img-row">
+                            <img class="img-responsive apercu-row mini" src="assets/img/projects-games/slimebo0.png" />
+                            <img class="img-responsive apercu-row" src="assets/img/projects-games/slimebo1.png" />
+                            <img class="img-responsive apercu-row mini" src="assets/img/projects-games/slimebo22.png" />
+                        </div>
+                        <span class="ft4">
+                            Unity, C#, Json, Adobe PS (Online Ranking, Skin & Shop System)
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row container work-details work2">
+                    <div class="featured-images">
+                        <div class="ft-img ft-img-col">
+                            <img class="img-responsive apercu-col" src="assets/img/projects-games/arrow00.jpg" />
+                            <img class="img-responsive apercu-col" src="assets/img/projects-games/arrow22.jpg" />
+                        </div>
+                        <span class="ft4">
+                            Unity, C#, Adobe PS, After Effect (Online Ranking, Score System)
+                        </span>
+                    </div>
+                    <div class="featured-text">
+                        <span class="ft1">ARROW</span>
+                        <span class="ft2 red">❮/❯ <a class="space">'</a>Hyper Casual Game</span>
+                        <span class="ft3">
+                            My very first game, a Hyper Casual type coded on Unity C#. It is an endless runner game
+                            where
+                            obstacles are generated programmatically infinitely,
+                            with a score system associated with the use of Web Service to have an online leaderboard.
+                        </span>
+                        <a class="view-link view-link-red" target="_blank"
+                            href="https://play.google.com/store/apps/details?id=com.SevenSea.ArrowZiggyFlappy">←&emsp;View
+                            the game</a>
+                    </div>
+                </div>
+
+                <div class="row container work-details work1">
+                    <div class="featured-text">
+                        <span class="ft1">WOORD-SPELLETJES.nl</span>
+                        <span class="ft2 yellow">❮/❯ <a class="space">'</a>Web game</span>
+                        <span class="ft3">
+                            Three web applications: Word6, Paardensprong, and Wordfinder.
+                            These are distinct games developed with JavaScript, centered around Dutch word play.
+                            Each game is built using a combination of PHP, CSS, HTML, JSON, and use the Google Sheets
+                            API.
+                            All three games are conveniently accessible on this website.
+                        </span>
+                        <a class="view-link view-link-yellow" target="_blank" href="https://woord-spelletjes.nl/">View
+                            the game&emsp;→</a>
+                    </div>
+                    <div class="featured-images">
+                        <div class="ft-img">
+                            <img class="ft-img1 img-responsive apercu-siteweb" src="assets/img/projects/woord-light.png"
+                                alt="" />
+                            <img class="ft-img2 img-responsive apercu-siteweb border-white"
+                                src="assets/img/projects/woord-dark.png" alt="" />
+                        </div>
+                        <span class="ft4">
+                            JavaScript, PHP, CSS, HTML, JSON, Google Sheet API
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- PORTFOLIO SECTION END-->
+
+        <!-- SKILL SECTION END-->
+        <section id="hire-sec">
+            <div class="row pad-top-bottom wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".2s"
+                style="display:flex">
+                <div class="col-lg-2 col-md-2 col-sm-2 vertical-text">
+                    <span>Thank you for visiting :)</span>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-7">
+                    <h1 style="color:rgb(23, 23, 23);">LET'S GET IN TOUCH !</h1>
+                    <p class="hire-text">If you're interested in my services or for more information, <br> feel free to
+                        contact me !</p>
+                    <p class="hire-text">Send an email to: <u>tonny.freelancing@gmail.com</u></p>
+                    <br />
+                    <br>
+                </div>
+            </div>
+
+            <span class="see-more">
+                Wanna see more ? here is my
+                <br>
+                <a class='link-more' target="_blank" href="https://444tonny.github.io/Portfolio/index.html">WEB
+                    PORTFOLIO</a>
+            </span>
+        </section>
+        <!-- HIRE SECTION END-->
+        <div class="move-me">
+            <a href="#home-sec" class="scrollup"><i class="fa fa-chevron-up"></i></a>
         </div>
-        
-        <span class="see-more">
-            Wanna see more ? here is my
-            <br>
-            <a class='link-more' target="_blank" href="https://444tonny.github.io/Portfolio/index.html">WEB PORTFOLIO</a>
-        </span>
-    </section>
-    <!-- HIRE SECTION END-->
-    <div class="move-me">
-        <a href="#home-sec" class="scrollup"><i class="fa fa-chevron-up"></i></a>
+        <!-- SCROLL TO TOP SECTION END-->
+        <!--  JQUERY CORE SCRIPTS -->
+        <script src="assets/js/jquery-1.10.2.js"></script>
+        <!--  BOOTSTRAP SCRIPTS -->
+        <script src="assets/js/bootstrap.js"></script>
+        <!--  SCROLL SCRIPTS -->
+        <script src="assets/js/jquery.easing.min.js"></script>
+        <!--  WOW ANIMATION SCRIPTS -->
+        <script src="assets/js/wow.min.js"></script>
+        <!-- EASY PIE CHART SCRIPTS -->
+        <script src="assets/js/jquery.easypiechart.min.js"></script>
+        <!-- PRETTY PHOTO SCRIPTS -->
+        <script src="assets/js/jquery.prettyPhoto.js"></script>
+        <!--  STYLE SWITCHER SCRIPTS -->
+        <script src="assets/js/styleSwitcher.js"></script>
+        <!--  CUSTOM SCRIPTS -->
+        <script src="assets/js/custom.js"></script>
+
     </div>
-    <!-- SCROLL TO TOP SECTION END-->
-    <!--  JQUERY CORE SCRIPTS -->
-    <script src="assets/js/jquery-1.10.2.js"></script>
-    <!--  BOOTSTRAP SCRIPTS -->
-    <script src="assets/js/bootstrap.js"></script>
-    <!--  SCROLL SCRIPTS -->
-    <script src="assets/js/jquery.easing.min.js"></script>
-    <!--  WOW ANIMATION SCRIPTS -->
-    <script src="assets/js/wow.min.js"></script>
-    <!-- EASY PIE CHART SCRIPTS -->
-    <script src="assets/js/jquery.easypiechart.min.js"></script>
-    <!-- PRETTY PHOTO SCRIPTS -->
-    <script src="assets/js/jquery.prettyPhoto.js"></script>
-    <!--  STYLE SWITCHER SCRIPTS -->
-    <script src="assets/js/styleSwitcher.js"></script>
-    <!--  CUSTOM SCRIPTS -->
-    <script src="assets/js/custom.js"></script>
-    
 </body>
+
 </html>
