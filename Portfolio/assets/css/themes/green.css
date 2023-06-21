@@ -12,9 +12,10 @@
 /* =============================================================
    GENERAL STYLES
  ============================================================ */
- h1 {
-color:#f10c5c;
-font-family: 'Concert One', cursive, sans-serif;
+h1 {
+  color:#f10c5c;
+  font-family: 'Concert One', cursive, sans-serif;
+  letter-spacing: 1.2px;
 }
 
 /* =============================================================
