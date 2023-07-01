@@ -67,7 +67,7 @@ h1
     cursor: pointer;
     transition: 0.2s;
     color: #1e1e1e !important;
-    background-color:rgb(255, 255, 255);
+    background-color:rgb(255, 255, 255) !important;
 }
 .btn-style-two 
 {
@@ -93,6 +93,7 @@ border-radius: 0px!important;
 .btn-style-three:hover {
     color: #fff;
 }
+
 /* =============================================================
   HOME SECTION STYLES
  ============================================================ */
@@ -181,9 +182,9 @@ cursor: pointer;
       background-color:rgb(255, 15, 101);
 }
 
-    /* =============================================================
+/* =============================================================
   ABOUT SECTION STYLES
- ============================================================ */
+============================================================ */
     
    
 #about-sec .social-icon {
