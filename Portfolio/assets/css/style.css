@@ -37,11 +37,13 @@ p
     font-size:16px;
     padding:10px 0px 10px 0px;
 }
-h1 
+#tonny
 {
-    font-weight: 100;
-    color:rgba(255, 255, 255, 0.95);
+  font-family: 'Open Sans', sans-serif !important;
+  color:#fdfdfdfa !important;
+  font-weight: 100 !important;
 }
+
 .color-strip 
 {
      margin:20px 0px 30px 0px;
