@@ -20,9 +20,9 @@ h1 {
 
 #tonny
 {
-  font-family: 'Open Sans', sans-serif;
-  color:#fdfdfdfa;
-  font-weight: 100;
+  font-family: 'Open Sans', sans-serif !important;
+  color:#fdfdfdfa !important;
+  font-weight: 100 !important;
 }
 
 /* =============================================================
