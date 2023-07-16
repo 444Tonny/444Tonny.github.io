@@ -13,9 +13,16 @@
    GENERAL STYLES
  ============================================================ */
 h1 {
-  color:#fcfcfc;
-  font-family: 'Open Sans', sans-serif;
+  color:#f10c5c;
+  font-family: 'Concert One', cursive, sans-serif;
   letter-spacing: 1.2px;
+}
+
+#tonny
+{
+  font-family: 'Open Sans', sans-serif;
+  color:#fdfdfdfa;
+  font-weight: 100;
 }
 
 /* =============================================================
