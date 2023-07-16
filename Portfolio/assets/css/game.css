@@ -13,6 +13,13 @@
   color: #dfbe1b;
 }
 
+#tonny
+{
+  font-family: 'Open Sans', sans-serif !important;
+  color:#fdfdfdfa !important;
+  font-weight: 100 !important;
+}
+
 .view-link-orange::after
 {
   content: "";
