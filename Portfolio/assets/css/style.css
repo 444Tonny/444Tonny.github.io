@@ -689,3 +689,44 @@ opacity:0.7;
   color:#fdfdfdfa !important;
   font-weight: 100 !important;
 }
+
+.lavande
+{
+    color: #d649c4 !important;
+}
+
+.lavande-link:after
+{
+    background: #d649c4 !important;
+}
+
+.dugout
+{
+    color: #c41149 !important;
+}
+
+.dugout-link:after
+{
+    background: #c41149 !important;
+}
+
+.wordle
+{
+    color: #59ac58 !important;
+}
+
+.wordle-link:after
+{
+    background: #59ac58 !important;
+}
+
+
+.artizaho
+{
+    color: rgb(188, 148, 113) !important;
+}
+
+.artizaho-link:after
+{
+    background: rgb(188, 148, 113) !important;
+}

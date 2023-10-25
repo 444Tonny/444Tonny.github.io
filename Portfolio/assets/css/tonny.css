@@ -446,6 +446,8 @@ img.timer-icon
     position: absolute;
     height: 35px;
     width: 75px;
+    transition: 0.2s;
+    color: rgb(211, 211, 211) !important;
     background: rgb(17 145 190);
     z-index: -1;
     border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
