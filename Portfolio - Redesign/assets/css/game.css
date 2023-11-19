@@ -1,0 +1,56 @@
+.orange
+{
+  color: #ee6f51;
+}
+
+.red
+{
+  color: #c44550;
+}
+
+.yellow
+{
+  color: #dfbe1b;
+}
+
+#tonny
+{
+  font-family: 'Open Sans', sans-serif !important;
+  color:#fdfdfdfa !important;
+  font-weight: 100 !important;
+}
+
+.view-link-orange::after
+{
+  content: "";
+  position: absolute;
+  height: 35px;
+  width: 75px;
+  background: #ee6f51 !important;
+  z-index: -1;
+}
+
+.view-link-red::after
+{
+  content: "";
+  position: absolute;
+  height: 35px;
+  width: 75px;
+  background: #c44550 !important;
+  z-index: -1;
+}
+
+.view-link-yellow::after
+{
+  content: "";
+  position: absolute;
+  height: 35px;
+  width: 75px;
+  background: #dfbe1b !important;
+  z-index: -1;
+}
+
+a:hover
+{
+  color: rgb(180, 180, 180) !important;
+}
