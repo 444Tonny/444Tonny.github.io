@@ -19,6 +19,7 @@
     <link href="assets/css/style.css" rel="stylesheet" />
     <link href="assets/css/tonny.css" rel="stylesheet" />
     <link href="assets/css/game.css" rel="stylesheet" />
+    <link href="assets/css/update.css?v1" rel="stylesheet" />
     <link href="assets/css/loading.css" rel="stylesheet" />
     <link href="assets/css/themes/green.css" id="mainCSS" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -73,55 +74,60 @@
 
     <div id="page-content">
         <!-- /. END THEME SWITCHER-->
-
-        <div id="home-sec">
-            <div class="overlay">
-                <div class="container">
-                    <div class="row pad-top-bottom  move-me">
-                        <div class="col-lg-5 col-md-5 col-sm-5 text-center">
-                            <img src="assets/img/sad.jpg" class="main-img img-circle wow bounceIn animated"
-                                data-wow-duration="1s" data-wow-delay=".2s" alt="" />
-                            <h1 id="tonny" class="wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".4s">TONNY</h1>
-                            <h2 class="wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".6s">WEB DEVELOPER
-                            </h2>
-                            <a href="https://444tonny.github.io/Portfolio/index.html"
-                                class="btn custom-btn-one btn-lg wow bounceIn animated" data-wow-duration="1s"
-                                data-wow-delay=".8s">WEB PORTFOLIO</a>
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-sm-2 text-center  ">
-                            <a href="#about-sec" class="wow bounceIn animated" data-wow-duration="1s"
-                                data-wow-delay=".1s">
-                                <i class="fa fa-info icon-round icon-round-active"></i>
-                                <h3 class="wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".2s">ABOUT ME
-                                </h3>
-                            </a>
-                            <a href="#resume-sec" class="wow bounceIn animated" data-wow-duration="1s"
-                                data-wow-delay=".3s">
-                                <i class="fa fa-briefcase icon-round"></i>
-                                <h3 class="wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".4s">RESUME
-                                </h3>
-                            </a>
-                            <a href="#portfolio-sec" class="wow bounceIn animated" data-wow-duration="1s"
-                                data-wow-delay=".5s">
-                                <i class="fa fa-recycle icon-round icon-round-active"></i>
-                                <h3 class="wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".6s">PORTFOLIO
-                                </h3>
-                            </a>
-                        </div>
-                        <div class="col-lg-5 col-md-5 col-sm-5 text-center">
-                            <img src="assets/img/smile.jpg" class="main-img-2 img-circle wow bounceIn animated"
-                                data-wow-duration="1s" data-wow-delay=".2s" alt="" />
-                            <h1 id="tonny" class="wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".4s">TONNY</h1>
-                            <h2 class="wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".6s">GAME DESIGNER
-                            </h2>
-                            <a href="#" class="btn custom-btn-one btn-lg wow bounceIn animated" data-wow-duration="1s"
-                                data-wow-delay=".8s">GAME PORTFOLIO</a>
-                        </div>
+        <div class="updhome">
+            <div class="uh_container">
+                <div class="uh_section1">
+                    <span class="uhs1_role">Web Developer & Designer</span>
+                    <div class="uhs1_name">
+                        <span class="mirror1" id="tonny_scroll">TONNY</span>
+                        <span class="mirror2">YNNOT</span>
                     </div>
-
+                    <button class="mybtn-primary" onclick="scrollToDiv('explore_scroll')">EXPLORE</button>
+                    
+                    <a href="file/Tonny_Andriambololona_Resume.pdf" download="Tonny_Resume" target="_blank">
+                        <button class="mybtn-secondary"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" height="0.85em" viewBox="0 0 512 512">
+                            <style>svg{fill:#ffffff}</style><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
+                            <b>CV</b>
+                        </button>
+                    </a>
+                    <span class="uhs1_text">Let's build awesome websites, apps <br> and games together!</span>
+                </div>
+                <div class="uh_section2">
+                    <span class="line">
+                        <span class="fake_shadow1 wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".2s">
+                            <span class="fake_shadow2">
+                                <a href="file/TonnyAndriambololona_Resume.pdf" download="Tonny_Resume" target="_blank">
+                                    <button class="cv_button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="0.85em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
+                                        <p>CV</p>
+                                    </button>
+                                </a>
+                            </span>
+                        </span>
+                    </span>
+                </div>
+                <div class="uh_section3">
+                    <img src="assets/img/update/tonny_ia.jpg" alt="Tonny Andriambololona picture" class="wow bounceIn animated" data-wow-duration="1s" data-wow-delay=".2s">
+                    <div class="social">
+                        <button>
+                            <a href="https://www.linkedin.com/in/tonny-444n/" target='_blank' class="linkedin"></a>
+                        </button>
+                        <button>
+                            <a href="tel:+14387226839" target='_blank' class="whatsapp"></a>
+                        </button>
+                        <button>
+                            <a href="https://join.skype.com/invite/oyXzSIO5MO9R" target='_blank' class="skype"></a>
+                        </button>
+                    </div>
+                    <div class="experience">
+                        <p>Experience</p>
+                        <b>2+ Years</b>
+                    </div>
                 </div>
             </div>
         </div>
+
         <!-- HOME SECTION END-->
         <section id="about-sec">
             <div class="container">
