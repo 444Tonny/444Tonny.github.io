@@ -276,6 +276,7 @@
     justify-content: space-between;
     margin-left: auto;
     max-width: 450px;
+    overflow: hidden;
 }
 
 .uh_section3 img
