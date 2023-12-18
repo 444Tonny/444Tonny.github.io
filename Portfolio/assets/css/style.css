@@ -710,6 +710,16 @@ opacity:0.7;
     background: #FF0067 !important;
 }
 
+.magik
+{
+    color: #7335D8 !important;
+}
+
+.magik-link:after
+{
+    background-color: #7335D8 !important;
+}
+
 .wordle
 {
     color: #59ac58 !important;
