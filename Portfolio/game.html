@@ -171,7 +171,7 @@
                 </div>
 
                 <div class="row container work-details work1">
-                    <div class="featured-text">
+                    <div class="featured-text" id="explore_scroll">
                         <span class="ft1">SLIMEBO</span>
                         <span class="ft2 orange">❮/❯ <a class="space">'</a>Hyper Casual Game</span>
                         <span class="ft3">
@@ -308,6 +308,16 @@
         <script src="assets/js/custom.js"></script>
 
     </div>
+
+    <script>
+        function scrollToDiv(divId) {
+            var element = document.getElementById(divId); // Sélectionne la div par son ID
+            var offset = (window.innerHeight - element.offsetHeight) / 2; // Calcule l'offset pour centrer la div
+
+            var scrollPosition = element.offsetTop - offset; // Calcule la position de défilement pour centrer la div
+            window.scrollTo({ top: scrollPosition, behavior: 'smooth' }); // Fait défiler jusqu'à la position centrée
+        }
+    </script>
 </body>
 
 </html>
