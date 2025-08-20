@@ -644,7 +644,7 @@ min-height: 400px;
     -webkit-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
-    color:rgb(18, 18, 18);
+    color:rgb(255, 255, 255);
 }
     #hire-sec .overlay {
         background:rgba(0, 0, 0, 0.80);

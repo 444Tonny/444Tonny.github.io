@@ -69,7 +69,8 @@
     font-family: 'Paytone one', sans-serif;
 }
 
-.uhs1_name span
+.uhs1_name span,
+.uhs1_name h1
 {
     height: 70px;
     display: flex;
@@ -384,6 +385,11 @@
     background-image: url('../img/update/whatsapp.png');
 }
 
+.mirror1
+{
+    margin-bottom: 0px !important;
+}
+
 /* MEDIA */
 
 @media screen and (max-width: 768px) {
@@ -687,20 +693,20 @@
     align-content: center;
     justify-content: center;
 
-    padding-top: 50px;
+    padding-top: 40px;
     padding-bottom: 10px;
     padding-left: 5%;
     padding-right: 5%;
+    background: whitesmoke;
 }
 
 .testimonials h2
 {
     font-family: 'Paytona one', sans-serif;
-    font-size: 30px;
     font-weight: 900;
-    color: #212121;
+    color: #060812;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .testimonials .cust_row
@@ -709,8 +715,7 @@
     flex-direction: row;
     justify-content: center;
     max-width: 900px;
-    padding-bottom: 40px;
-    border-bottom: 1px solid lightgray;
+    padding-bottom: 50px;
 }
 
 .testimonials .cust_row div
@@ -727,8 +732,9 @@
 
 .feedbacks img
 {
+    position: relative;
     border-radius: 10px;
-    box-shadow: 0px 0px 5px 1px rgb(184, 184, 184);
+    box-shadow: 0 5px 15px rgba(82, 82, 82, 0.1);
 
     margin-top: 15px;
     margin-bottom: 15px;
@@ -747,7 +753,7 @@
     color: #373737;
     font-size: 16px;
     line-height: 26px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Oxanium', sans-serif;
 }
 
 .testimonials .text a
@@ -798,7 +804,7 @@
 
 /* Projects */
 
-#portfolio-sec h1
+#portfolio-sec h2
 {
     font-weight: 900;
     font-family: 'Paytona one', sans-serif !important;
@@ -811,18 +817,25 @@
 {
     font-family: 'oxanium', sans-serif;
     font-weight: 200;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* Hire */ 
 
-#hire-sec h1,
-.uidesign h1
+#hire-sec h2,
+.wordpress h2
 {
     font-weight: 900 !important;
     font-family: 'Paytona one', sans-serif !important;
     color: rgba(0, 0, 0, 0) !important;
-    -webkit-text-stroke-width: 0.8px !important;
-    -webkit-text-stroke-color: rgb(10, 10, 10) !important;
+    -webkit-text-stroke-width: 1px !important;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+.wordpress h2{
+    -webkit-text-stroke-color: rgb(0, 0, 0) !important;
 }
 
 #hire-sec p {
@@ -831,7 +844,7 @@
 
 #hire-sec .social
 {
-    width: 300px;
+    width: 150px;
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -875,21 +888,221 @@
 
 /* UI Design */
 
-.uidesign h1
+.wordpress h2
 {
     text-align: center;
-    margin-bottom: 60px !important;
 }
 
-.uidesign{
-    max-width: 900px;
-    width: 90%;
+.wordpress{
+    width: 100%;
     margin: auto;
     min-height: 550px;
     background-color: white;
-    margin-bottom: 60px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
+.wp_list
+{
+    margin: auto;
+    margin-top: 60px;
+    max-width: 1350px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 60px;
+    row-gap: 45px;
+}
+
+.wp_list div
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    font-family: 'Oxanium', sans-serif;
+}
+
+.wp_list .website_thumbnail
+{
+    width: 385px;
+    height: 200px;
+    border-radius: 6px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: 0 5px 15px rgba(54, 54, 54, 0.1);
+    margin-bottom: 13px;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.wp_list span
+{
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    height: 30px;
+    color: rgb(69, 69, 69) !important;
+    font-size: 13px;
+}
+
+.wp_list span
+{
+    border-bottom: 1px solid rgb(215, 215, 215);
+    margin-bottom: 7px;
+    padding-bottom: 7px;
+    font-weight: 400;
+}
+
+.wp_list span.visit_link
+{
+    border-bottom: none !important;
+}
+
+.wp_list span.visit_link a
+{
+    color: #ff0067 !important;
+    font-weight: 600 !important;
+    text-decoration: none;
+    font-size: 15px !important;
+    margin-left: 4px;
+}
+
+.wp_list span.visit_link a:hover,
+.wp_list span.visit_link a:focus
+{
+    transition: 0.1s;
+    color: black !important;
+}
+
+.wp_list span img
+{
+    margin-right: 6px;
+}
+
+/* services */
+.services
+{
+    background-color: white;
+    min-height: 200px;
+    padding: 75px 25px 75px 25px;
+    width: 100%;
+    font-family: 'Oxanium', sans-serif;
+}
+
+.services-wrapper
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    row-gap: 45px;;
+    column-gap: 50px;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.services1
+{
+    display: flex;
+    flex-direction: column;  
+    gap: 8px; 
+}
+
+.serv_single
+{
+    max-width: 400px;
+    min-width: 300px;
+    width: 100%;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 14px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.separator_service
+{
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.serv_icon
+{
+    background: #ff0067;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.serv_text
+{
+    height: 65px;
+    font-size: 13px;
+    color: rgb(143, 143, 143);
+}
+
+.serv_text h4
+{
+    margin-top: 0px !important;
+    margin-bottom: 5px !important;
+    font-size: 16px !important;
+    font-weight: 700;
+    color: #060812;
+}
+
+.services2
+{
+    margin: auto;
+    flex: 1 0 55%;
+    width: 100%;
+    max-width: 600px;
+}
+
+.services2 h2
+{
+    font-family: 'Paytona one', sans-serif;
+    font-weight: 900;
+    color: #060812;
+    margin-top: 0px !important;
+    margin-bottom: 25px !important;
+    line-height: 45px;
+}
+
+.services2_text
+{
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.services2_numbers
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 30px;
+    margin-top: 23px;
+    font-size: 16px;
+}
+
+.services2_numbers b
+{
+    font-size: 34px;
+    font-weight: 700;
+    color: #ff0067;
+}
+
+/*
 .photo-gallery
 {
     display: flex;
@@ -931,6 +1144,7 @@
 {
     width: 80% !important;
 }
+    */
 
 @media(max-width:768px)
 {
@@ -947,5 +1161,21 @@
     .smaller
     {
         width: 100% !important;
+    }
+
+    .services-wrapper
+    {
+        flex-direction: column-reverse;
+    }
+
+    .website_thumbnail
+    {
+        width: 300px !important;
+        height: auto !important;
+    }
+
+    .wp_list span
+    {
+        height: 38px;
     }
 }

@@ -351,7 +351,7 @@ img.timer-icon
 
 .work-details
 {
-  margin-top: 80px;
+  margin-top: 60px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -588,7 +588,7 @@ img.timer-icon
   }
 
   h2, .h2 {
-    font-size: 25px;
+    font-size: 30px;
   }
 
   p {
@@ -676,7 +676,7 @@ img.timer-icon
 
 #hire-sec p
 {
-  color: rgb(20, 20, 20) !important;
+  color: rgb(255, 255, 255) !important;
   text-align: left;
 }
 
@@ -690,6 +690,7 @@ img.timer-icon
   writing-mode: vertical-rl;
   text-orientation: mixed;
   font-family: monospace;
+  color: white;
 }
 
 #hire-sec .other-social
@@ -736,8 +737,9 @@ a:hover, a:focus {
 
 #hire-sec
 {
+  background-color: #060812;
   padding-left: 10px !important;
-padding-right: 10px !important;
+  padding-right: 10px !important;
 }
 
 .pad-top-bottom {
@@ -752,7 +754,7 @@ padding-right: 10px !important;
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
   padding-top: 30px;
   border-top: 1px solid rgb(134, 144, 147);
 }
@@ -770,3 +772,5 @@ a.link-more:hover
   transition: 0.2s;
   color: rgb(202, 40, 75) !important; 
 }
+
+/* Wordpresss */
