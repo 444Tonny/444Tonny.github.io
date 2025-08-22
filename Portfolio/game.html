@@ -330,6 +330,35 @@
             window.scrollTo({ top: scrollPosition, behavior: 'smooth' }); // Fait défiler jusqu'à la position centrée
         }
     </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Sélectionne toutes les images avec la classe img-responsive
+            const images = document.querySelectorAll(".img-responsive");
+
+            images.forEach(img => {
+                img.addEventListener("click", () => {
+                // Créer l’overlay
+                const overlay = document.createElement("div");
+                overlay.classList.add("lightbox-overlay");
+
+                // Créer l’image en taille originale
+                const fullImg = document.createElement("img");
+                fullImg.src = img.src; // tu peux remplacer par img.dataset.full si tu veux une version HD différente
+
+                // Ajout de l’image dans l’overlay
+                overlay.appendChild(fullImg);
+                document.body.appendChild(overlay);
+
+                // Fermer au clic sur overlay ou image
+                overlay.addEventListener("click", () => {
+                    overlay.remove();
+                });
+                });
+            });
+        });
+    </script>
+
 </body>
 
 </html>

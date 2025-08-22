@@ -17,7 +17,7 @@
     <link href="assets/css/styleSwitcher.css" rel="stylesheet" />
     <link href="assets/css/style.css?v1" rel="stylesheet" />
     <link href="assets/css/tonny.css?v1" rel="stylesheet" />
-    <link href="assets/css/update.css?v2.1" rel="stylesheet" />
+    <link href="assets/css/update.css?v2.11" rel="stylesheet" />
     <link href="assets/css/loading.css?v1" rel="stylesheet" />
     <link href="assets/css/themes/green.css?v1" id="mainCSS" rel="stylesheet" />
     <!-- GOOGLE FONTS -->
@@ -988,7 +988,6 @@
                 });
             });
         </script>
-
         <!-- PORTFOLIO SECTION END-->
 
         <!-- TESTIMONIALS -->
@@ -1069,6 +1068,35 @@
         <script src="assets/js/custom.js"></script>
 
     </div>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Sélectionne toutes les images avec la classe img-responsive
+        const images = document.querySelectorAll(".img-responsive");
+
+        images.forEach(img => {
+            img.addEventListener("click", () => {
+            // Créer l’overlay
+            const overlay = document.createElement("div");
+            overlay.classList.add("lightbox-overlay");
+
+            // Créer l’image en taille originale
+            const fullImg = document.createElement("img");
+            fullImg.src = img.src; // tu peux remplacer par img.dataset.full si tu veux une version HD différente
+
+            // Ajout de l’image dans l’overlay
+            overlay.appendChild(fullImg);
+            document.body.appendChild(overlay);
+
+            // Fermer au clic sur overlay ou image
+            overlay.addEventListener("click", () => {
+                overlay.remove();
+            });
+            });
+        });
+    });
+</script>
+
 
 </body>
 
