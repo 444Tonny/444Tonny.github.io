@@ -3,6 +3,11 @@
   color: #ee6f51;
 }
 
+.blue
+{
+  color: #008dc2;
+}
+
 .red
 {
   color: #c44550;
@@ -27,6 +32,16 @@
   height: 35px;
   width: 75px;
   background: #ee6f51 !important;
+  z-index: -1;
+}
+
+.view-link-blue::after
+{
+  content: "";
+  position: absolute;
+  height: 35px;
+  width: 75px;
+  background: #008dc2 !important;
   z-index: -1;
 }
 
